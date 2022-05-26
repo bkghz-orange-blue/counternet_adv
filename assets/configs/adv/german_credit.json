@@ -1,0 +1,35 @@
+{
+    "data_name": "german_credit",
+    "lr": 0.003,
+    "batch_size": 256,
+    "lambda_1": 1.0,
+    "lambda_2": 0.5,
+    "lambda_3": 1.0,
+    "threshold": 1.0,
+    "continous_cols": [
+        "Duration", "Credit amount", "Installment rate", "Age", "Existing credits", "Number people"
+    ],
+    "discret_cols": [
+        "Present residence", "Status", "History"
+    ],
+    "enc_dims": [
+        19,
+        100,
+        10
+    ],
+    "dec_dims": [
+        10,
+        20
+    ],
+    "exp_dims": [
+        10,
+        20
+    ],
+    "loss_func_1": "mse",
+    "loss_func_2": "mse",
+    "loss_func_3": "mse",
+    "adv_loss_func": "mse",
+    "n_steps": 7,
+    "epsilon": 0.1,
+    "eps_scheduler": "linear"
+}

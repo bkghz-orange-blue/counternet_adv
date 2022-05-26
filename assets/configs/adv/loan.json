@@ -1,0 +1,32 @@
+{
+    "data_name": "loan",
+    "lr": 0.003,
+    "batch_size": 128,
+    "lambda_1": 1.0,
+    "lambda_2": 0.1,
+    "lambda_3": 0.2,
+    "threshold": 1.0,
+    "continous_cols": [
+        "NoEmp", "NewExist", "CreateJob", "RetainedJob", "DisbursementGross", "GrAppv", "SBA_Appv"
+    ],
+    "discret_cols": [
+        "State", "Term", "UrbanRural", "LowDoc", "Sector_Points"
+    ],
+    "enc_dims": [
+        110,
+        200,
+        10
+    ],
+    "dec_dims": [
+        10,
+        10
+    ],
+    "exp_dims": [
+        10,
+        10
+    ],
+    "loss_func_1": "mse",
+    "loss_func_2": "mse",
+    "loss_func_3": "mse",
+    "adv_loss_func": "mse"
+}

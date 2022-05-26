@@ -1,0 +1,7 @@
+{
+    "max_epochs": 50,
+    "gpus": 0,
+    "deterministic": true,
+    "benchmark": true,
+    "automatic_optimization": false
+}

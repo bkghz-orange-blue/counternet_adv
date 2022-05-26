@@ -1,0 +1,303 @@
+adv: true
+batch_size: 128
+continous_cols:
+- NoEmp
+- NewExist
+- CreateJob
+- RetainedJob
+- DisbursementGross
+- GrAppv
+- SBA_Appv
+data_dir: assets/data/adv/loan/org.csv
+data_name: loan
+dec_dims:
+- 10
+- 10
+discret_cols:
+- State
+- Term
+- UrbanRural
+- LowDoc
+- Sector_Points
+enc_dims:
+- 110
+- 200
+- 10
+encoder: !!python/object:sklearn.preprocessing._encoders.OneHotEncoder
+  _sklearn_version: 0.24.2
+  categories: auto
+  categories_:
+  - !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - &id001 !!python/name:numpy.ndarray ''
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 51
+    - &id003 !!python/object/apply:numpy.dtype
+      args:
+      - O8
+      - false
+      - true
+      state: !!python/tuple
+      - 3
+      - '|'
+      - null
+      - null
+      - null
+      - -1
+      - -1
+      - 63
+    - false
+    - - AK
+      - AL
+      - AR
+      - AZ
+      - CA
+      - CO
+      - CT
+      - DC
+      - DE
+      - FL
+      - GA
+      - HI
+      - IA
+      - ID
+      - IL
+      - IN
+      - KS
+      - KY
+      - LA
+      - MA
+      - MD
+      - ME
+      - MI
+      - MN
+      - MO
+      - MS
+      - MT
+      - NC
+      - ND
+      - NE
+      - NH
+      - NJ
+      - NM
+      - NV
+      - NY
+      - OH
+      - OK
+      - OR
+      - PA
+      - RI
+      - SC
+      - SD
+      - TN
+      - TX
+      - UT
+      - VA
+      - VT
+      - WA
+      - WI
+      - WV
+      - WY
+  - !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 36
+    - &id002 !!python/object/apply:numpy.dtype
+      args:
+      - i8
+      - false
+      - true
+      state: !!python/tuple
+      - 3
+      - <
+      - null
+      - null
+      - null
+      - -1
+      - -1
+      - 0
+    - false
+    - !!binary |
+      AAAAAAAAAAABAAAAAAAAAAIAAAAAAAAAAwAAAAAAAAAEAAAAAAAAAAUAAAAAAAAABgAAAAAAAAAH
+      AAAAAAAAAAgAAAAAAAAACQAAAAAAAAAKAAAAAAAAAAsAAAAAAAAADAAAAAAAAAANAAAAAAAAAA4A
+      AAAAAAAADwAAAAAAAAAQAAAAAAAAABEAAAAAAAAAEgAAAAAAAAATAAAAAAAAABQAAAAAAAAAFQAA
+      AAAAAAAWAAAAAAAAABcAAAAAAAAAGAAAAAAAAAAZAAAAAAAAABoAAAAAAAAAGwAAAAAAAAAcAAAA
+      AAAAAB0AAAAAAAAAHgAAAAAAAAAgAAAAAAAAACEAAAAAAAAAIwAAAAAAAAAkAAAAAAAAACsAAAAA
+      AAAA
+  - !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 3
+    - *id002
+    - false
+    - !!binary |
+      AAAAAAAAAAABAAAAAAAAAAIAAAAAAAAA
+  - !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 7
+    - *id003
+    - false
+    - - '0'
+      - A
+      - C
+      - N
+      - R
+      - S
+      - Y
+  - !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 6
+    - *id002
+    - false
+    - !!binary |
+      AAAAAAAAAAABAAAAAAAAAAIAAAAAAAAAAwAAAAAAAAAEAAAAAAAAAAUAAAAAAAAA
+  drop: null
+  drop_idx_: null
+  dtype: !!python/name:numpy.float64 ''
+  handle_unknown: error
+  sparse: false
+epsilon: 0.01
+exp_dims:
+- 10
+- 10
+lambda_1: 1.0
+lambda_2: 0.01
+lambda_3: 0.2
+loss_func_1: mse
+loss_func_2: mse
+loss_func_3: mse
+lr: 0.003
+normalizer: !!python/object:sklearn.preprocessing._data.MinMaxScaler
+  _sklearn_version: 0.24.2
+  clip: false
+  copy: true
+  data_max_: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 7
+    - &id004 !!python/object/apply:numpy.dtype
+      args:
+      - f8
+      - false
+      - true
+      state: !!python/tuple
+      - 3
+      - <
+      - null
+      - null
+      - null
+      - -1
+      - -1
+      - 0
+    - false
+    - !!binary |
+      AAAAAICHw0AAAAAAAAAAQAAAAAAA3bNAAAAAAACOwkCmW2Vb0EAwQN5Gb/lSZy5A3kZv+VJnLkA=
+  data_min_: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 7
+    - *id004
+    - false
+    - !!binary |
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOR6esjZYgQKD/j5mKoRtAYriwOcLbGEA=
+  data_range_: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 7
+    - *id004
+    - false
+    - !!binary |
+      AAAAAICHw0AAAAAAAAAAQAAAAAAA3bNAAAAAAACOwkB84EYUJtYfQA5Hp6yNliBAreqW3HH5IUA=
+  feature_range: !!python/tuple
+  - 0
+  - 1
+  min_: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 7
+    - *id004
+    - false
+    - !!binary |
+      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABZ/TsOXKzwv+ahQzbDpuq/mSKUn7sg5r8=
+  n_features_in_: 7
+  n_samples_seen_: 449152
+  scale_: !!python/object/apply:numpy.core.multiarray._reconstruct
+    args:
+    - *id001
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 7
+    - *id004
+    - false
+    - !!binary |
+      5Vf5u443Gj8AAAAAAADgP6vA8Va1xik/B6VTSBeYGz/dm/J3CBXAPy2kXH6R3b4/YYAKwyZ8vD8=
+threshold: 1.0

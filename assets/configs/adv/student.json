@@ -1,0 +1,45 @@
+{
+    "data_name": "student",
+    "lr": 0.01,
+    "batch_size": 128,
+    "lambda_1": 1.0,
+    "lambda_2": 0.1,
+    "lambda_3": 0.2,
+    "threshold": 1.0,
+    "continous_cols": [
+        "failures",
+        "age"
+    ],
+    "discret_cols": [
+        "G2",
+        "G1",
+        "higher",
+        "goout",
+        "Mjob",
+        "Fjob",
+        "health",
+        "freetime",
+        "absences",
+        "Walc",
+        "famrel",
+        "Medu",
+        "Fedu"
+    ],
+    "enc_dims": [
+        83,
+        50,
+        10
+    ],
+    "dec_dims": [
+        10,
+        10
+    ],
+    "exp_dims": [
+        10,
+        50
+    ],
+    "loss_func_1": "mse",
+    "loss_func_2": "mse",
+    "loss_func_3": "mse",
+    "adv_loss_func": "mse"
+}

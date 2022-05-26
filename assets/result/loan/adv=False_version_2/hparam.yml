@@ -1,0 +1,36 @@
+adv: false
+batch_size: 128
+continous_cols:
+- NoEmp
+- NewExist
+- CreateJob
+- RetainedJob
+- DisbursementGross
+- GrAppv
+- SBA_Appv
+data_dir: assets/data/adv/loan/org.csv
+data_name: loan
+dec_dims:
+- 10
+- 10
+discret_cols:
+- State
+- Term
+- UrbanRural
+- LowDoc
+- Sector_Points
+enc_dims:
+- 110
+- 200
+- 10
+exp_dims:
+- 10
+- 10
+lambda_1: 1.0
+lambda_2: 0.01
+lambda_3: 0.2
+loss_func_1: mse
+loss_func_2: mse
+loss_func_3: mse
+lr: 0.003
+threshold: 1.0
